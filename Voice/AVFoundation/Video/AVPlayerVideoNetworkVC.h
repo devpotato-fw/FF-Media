@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-// AVPlayer播放-网络视频
+// AVPlayer播放网络视频
 @interface AVPlayerVideoNetworkVC : UIViewController
 
 - (IBAction)playClick:(UIButton *)sender;// 点击播放/暂停按钮

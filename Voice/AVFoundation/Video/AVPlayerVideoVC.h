@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-// AVPlayer播放-本地视频
+// AVPlayer播放本地视频
 @interface AVPlayerVideoVC : UIViewController
 
 - (IBAction)playClick:(UIButton *)sender;

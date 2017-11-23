@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--iOS音频、视频-->
+        <!--iOS多媒体-->
         <scene sceneID="3KE-QE-cDV">
             <objects>
                 <viewController id="WOV-rZ-wdu" customClass="ViewController" sceneMemberID="viewController">
@@ -21,40 +21,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rid-JE-aYe">
-                                <rect key="frame" x="36" y="103" width="323" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="AVAudioRecorder录音使用"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rid-JE-aYe">
+                                <rect key="frame" x="30" y="139" width="315" height="30"/>
+                                <state key="normal" title="AVAudioRecorder录音"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="push" id="zVQ-e5-Gp4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFK-tC-c86">
-                                <rect key="frame" x="36" y="156" width="323" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFK-tC-c86">
+                                <rect key="frame" x="30" y="184" width="315" height="30"/>
                                 <state key="normal" title="AVPlayer播放音频"/>
                                 <connections>
                                     <segue destination="CkL-hX-aCH" kind="push" id="0WA-Nx-in0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-A7-3Ee">
-                                <rect key="frame" x="36" y="209" width="323" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-A7-3Ee">
+                                <rect key="frame" x="30" y="229" width="315" height="30"/>
                                 <state key="normal" title="AVPlayer播放视频"/>
                                 <connections>
                                     <segue destination="B3Q-Gh-W63" kind="push" id="261-3t-HI4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zj-rx-aif">
+                                <rect key="frame" x="30" y="94" width="315" height="30"/>
+                                <state key="normal" title="MediaPlayer播放视频"/>
+                                <connections>
+                                    <segue destination="vhh-B2-3Xu" kind="push" id="9ZM-hg-uBo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AbS-A7-3Ee" firstAttribute="top" secondItem="kFK-tC-c86" secondAttribute="bottom" constant="15" id="262-cz-YOc"/>
+                            <constraint firstItem="0Zj-rx-aif" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="7zb-hd-DIS"/>
+                            <constraint firstAttribute="trailing" secondItem="kFK-tC-c86" secondAttribute="trailing" constant="30" id="BE4-sf-coE"/>
+                            <constraint firstItem="kFK-tC-c86" firstAttribute="top" secondItem="rid-JE-aYe" secondAttribute="bottom" constant="15" id="NP1-WX-F4Z"/>
+                            <constraint firstItem="rid-JE-aYe" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="Q2Q-fB-q4O"/>
+                            <constraint firstItem="rid-JE-aYe" firstAttribute="top" secondItem="0Zj-rx-aif" secondAttribute="bottom" constant="15" id="SIo-uK-r8M"/>
+                            <constraint firstAttribute="trailing" secondItem="AbS-A7-3Ee" secondAttribute="trailing" constant="30" id="W2C-Nh-Jz9"/>
+                            <constraint firstAttribute="trailing" secondItem="0Zj-rx-aif" secondAttribute="trailing" constant="30" id="alV-TV-xpi"/>
+                            <constraint firstAttribute="trailing" secondItem="rid-JE-aYe" secondAttribute="trailing" constant="30" id="gwb-0I-eXN"/>
+                            <constraint firstItem="kFK-tC-c86" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="jGU-ZL-obr"/>
+                            <constraint firstItem="0Zj-rx-aif" firstAttribute="top" secondItem="dmM-HN-eOg" secondAttribute="bottom" constant="30" id="sgh-J4-RjC"/>
+                            <constraint firstItem="AbS-A7-3Ee" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="uWf-6Z-MwV"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="iOS音频、视频" id="Ins-cN-7kW"/>
+                    <navigationItem key="navigationItem" title="iOS多媒体" id="Ins-cN-7kW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8PC-UJ-73T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="385" y="59"/>
+            <point key="canvasLocation" x="-204" y="772"/>
         </scene>
-        <!--AVPlayerMusic-->
+        <!--AVPlayer-->
         <scene sceneID="Plr-wv-eio">
             <objects>
                 <viewController storyboardIdentifier="AVPlayerMusicVC" id="CkL-hX-aCH" customClass="AVPlayerMusicVC" sceneMemberID="viewController">
@@ -87,7 +105,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="AVPlayerMusic" id="nZr-vD-XvL"/>
+                    <navigationItem key="navigationItem" title="AVPlayer" id="nZr-vD-XvL"/>
                     <connections>
                         <outlet property="view" destination="aMV-Co-rJ7" id="4Ry-ta-SFU"/>
                     </connections>
@@ -154,9 +172,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5e-mf-fcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2209" y="385"/>
+            <point key="canvasLocation" x="2180" y="725"/>
         </scene>
-        <!--View Controller-->
+        <!--AVPlayer-->
         <scene sceneID="Bqd-Nf-Ouw">
             <objects>
                 <viewController id="B3Q-Gh-W63" sceneMemberID="viewController">
@@ -189,11 +207,69 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="S9T-d9-Q6H"/>
+                    <navigationItem key="navigationItem" title="AVPlayer" id="S9T-d9-Q6H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfP-p0-xaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1241" y="773"/>
+        </scene>
+        <!--本地视频-->
+        <scene sceneID="aB7-KL-Dz6">
+            <objects>
+                <viewController id="QK0-Ms-pwa" customClass="MediaPlayerVideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mSW-Du-FAz"/>
+                        <viewControllerLayoutGuide type="bottom" id="3TP-u7-8Wc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TUH-JR-p4T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-AF-lnZ">
+                                <rect key="frame" x="151.5" y="295" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Video"/>
+                                <connections>
+                                    <action selector="playVideo" destination="QK0-Ms-pwa" eventType="touchUpInside" id="K6Q-rP-0mu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="本地视频" id="fda-RD-Vgd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzv-2G-bkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2199" y="1487"/>
+        </scene>
+        <!--网络视频-->
+        <scene sceneID="8Oi-es-3Qs">
+            <objects>
+                <viewController id="E9a-bZ-F3z" customClass="MediaPlayerNetworkVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Abq-vZ-vV0"/>
+                        <viewControllerLayoutGuide type="bottom" id="e84-m8-VCq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fka-SN-hVg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hd1-Vy-22S">
+                                <rect key="frame" x="151.5" y="276" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Video"/>
+                                <connections>
+                                    <action selector="playVideo" destination="E9a-bZ-F3z" eventType="touchUpInside" id="D2M-oM-Odq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="网络视频" id="Rga-VF-RTZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPX-mt-h33" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3052" y="1530.5847076461771"/>
         </scene>
         <!--播放网络视频-->
         <scene sceneID="9cn-vs-RoD">
@@ -288,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C26-qS-XGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2209" y="1070"/>
+            <point key="canvasLocation" x="3052" y="772"/>
         </scene>
         <!--AVAudioRecorder-->
         <scene sceneID="tne-QT-ifu">
@@ -461,7 +537,46 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBX-D9-nTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-438" y="59"/>
+            <point key="canvasLocation" x="-1122" y="771"/>
+        </scene>
+        <!--MediaPlayer-->
+        <scene sceneID="Ogh-hX-ssa">
+            <objects>
+                <viewController id="vhh-B2-3Xu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XaG-1x-JIX"/>
+                        <viewControllerLayoutGuide type="bottom" id="O01-23-Qnd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tj6-Lb-LCB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLw-VY-cd3">
+                                <rect key="frame" x="37" y="138" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放本地视频"/>
+                                <connections>
+                                    <segue destination="QK0-Ms-pwa" kind="push" id="s33-8k-mC0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU0-m1-5iW">
+                                <rect key="frame" x="37" y="176" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放网络视频"/>
+                                <connections>
+                                    <segue destination="E9a-bZ-F3z" kind="push" id="aeh-58-cD2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MediaPlayer" id="6Hb-Fx-gvW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnl-iz-aTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="1531"/>
         </scene>
     </scenes>
 </document>

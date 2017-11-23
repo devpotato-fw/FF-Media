@@ -37,7 +37,7 @@
 -(void)initPlayer{
   //创建播放器层
   AVPlayerLayer *playerLayer=[AVPlayerLayer playerLayerWithPlayer:self.player];
-  playerLayer.frame=self.container.bounds;
+  playerLayer.frame = self.container.bounds;
   playerLayer.videoGravity=AVLayerVideoGravityResizeAspect;//视频填充模式
   [self.container.layer addSublayer:playerLayer];
 }
@@ -65,7 +65,7 @@
   if (urlStr == nil) {
     NSLog(@"--- 请设置本地视频路径 ---");
   }
-  NSURL *url=[NSURL fileURLWithPath:urlStr];
+  NSURL *url = [NSURL fileURLWithPath:urlStr];
   AVPlayerItem *playerItem=[AVPlayerItem playerItemWithURL:url];
   return playerItem;
 }

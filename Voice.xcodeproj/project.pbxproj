@@ -19,6 +19,8 @@
 		02FE13301DEB1E8C00BE90D6 /* yxqc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02FE132F1DEB1E8C00BE90D6 /* yxqc.mp3 */; };
 		F5D5A0331FC65A0E005DF058 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A0321FC65A0E005DF058 /* ViewController.m */; };
 		F5E6FEF11FC6846D0097B7CB /* apple.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F5E6FEF01FC6846D0097B7CB /* apple.mp4 */; };
+		F5E6FEF61FC687750097B7CB /* MediaPlayerVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E6FEF51FC687750097B7CB /* MediaPlayerVideoVC.m */; };
+		F5E6FEF91FC68B5B0097B7CB /* MediaPlayerNetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E6FEF81FC68B5B0097B7CB /* MediaPlayerNetworkVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,10 @@
 		F5D5A0311FC65A0E005DF058 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F5D5A0321FC65A0E005DF058 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F5E6FEF01FC6846D0097B7CB /* apple.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple.mp4; sourceTree = "<group>"; };
+		F5E6FEF41FC687750097B7CB /* MediaPlayerVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaPlayerVideoVC.h; sourceTree = "<group>"; };
+		F5E6FEF51FC687750097B7CB /* MediaPlayerVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaPlayerVideoVC.m; sourceTree = "<group>"; };
+		F5E6FEF71FC68B5B0097B7CB /* MediaPlayerNetworkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaPlayerNetworkVC.h; sourceTree = "<group>"; };
+		F5E6FEF81FC68B5B0097B7CB /* MediaPlayerNetworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaPlayerNetworkVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +84,8 @@
 				020B94051DAE748C00AF08FA /* AppDelegate.m */,
 				F5D5A0311FC65A0E005DF058 /* ViewController.h */,
 				F5D5A0321FC65A0E005DF058 /* ViewController.m */,
-				F5E6FEEC1FC6762D0097B7CB /* Recorder */,
-				F5E6FEEE1FC676430097B7CB /* Music */,
-				F5E6FEEF1FC6764D0097B7CB /* Video */,
+				F5E6FEF31FC686CE0097B7CB /* MediaPlayer */,
+				F5E6FEF21FC686A40097B7CB /* AVFoundation */,
 				02FE132F1DEB1E8C00BE90D6 /* yxqc.mp3 */,
 				F5E6FEF01FC6846D0097B7CB /* apple.mp4 */,
 				020B940A1DAE748C00AF08FA /* Main.storyboard */,
@@ -127,6 +132,27 @@
 				0252602B1DBB7CC000803E51 /* AVPlayerVideoNetworkVC.m */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		F5E6FEF21FC686A40097B7CB /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				F5E6FEEC1FC6762D0097B7CB /* Recorder */,
+				F5E6FEEE1FC676430097B7CB /* Music */,
+				F5E6FEEF1FC6764D0097B7CB /* Video */,
+			);
+			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		F5E6FEF31FC686CE0097B7CB /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F5E6FEF41FC687750097B7CB /* MediaPlayerVideoVC.h */,
+				F5E6FEF51FC687750097B7CB /* MediaPlayerVideoVC.m */,
+				F5E6FEF71FC68B5B0097B7CB /* MediaPlayerNetworkVC.h */,
+				F5E6FEF81FC68B5B0097B7CB /* MediaPlayerNetworkVC.m */,
+			);
+			path = MediaPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +233,8 @@
 				020B94091DAE748C00AF08FA /* AVAudioRecorderVC.m in Sources */,
 				020B94061DAE748C00AF08FA /* AppDelegate.m in Sources */,
 				025260291DBB6BD500803E51 /* AVPlayerVideoVC.m in Sources */,
+				F5E6FEF91FC68B5B0097B7CB /* MediaPlayerNetworkVC.m in Sources */,
+				F5E6FEF61FC687750097B7CB /* MediaPlayerVideoVC.m in Sources */,
 				020B94031DAE748C00AF08FA /* main.m in Sources */,
 				025A3A3D1DB7768900689746 /* AVPlayerMusicVC.m in Sources */,
 				0252602C1DBB7CC000803E51 /* AVPlayerVideoNetworkVC.m in Sources */,
