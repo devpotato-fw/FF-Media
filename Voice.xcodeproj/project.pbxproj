@@ -17,6 +17,8 @@
 		0252602C1DBB7CC000803E51 /* AVPlayerVideoNetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252602B1DBB7CC000803E51 /* AVPlayerVideoNetworkVC.m */; };
 		025A3A3D1DB7768900689746 /* AVPlayerMusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 025A3A3C1DB7768900689746 /* AVPlayerMusicVC.m */; };
 		02FE13301DEB1E8C00BE90D6 /* yxqc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02FE132F1DEB1E8C00BE90D6 /* yxqc.mp3 */; };
+		F5D5A0331FC65A0E005DF058 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A0321FC65A0E005DF058 /* ViewController.m */; };
+		F5E6FEF11FC6846D0097B7CB /* apple.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F5E6FEF01FC6846D0097B7CB /* apple.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		025A3A3B1DB7768900689746 /* AVPlayerMusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerMusicVC.h; sourceTree = "<group>"; };
 		025A3A3C1DB7768900689746 /* AVPlayerMusicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerMusicVC.m; sourceTree = "<group>"; };
 		02FE132F1DEB1E8C00BE90D6 /* yxqc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yxqc.mp3; sourceTree = "<group>"; };
+		F5D5A0311FC65A0E005DF058 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5D5A0321FC65A0E005DF058 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5E6FEF01FC6846D0097B7CB /* apple.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +76,13 @@
 			children = (
 				020B94041DAE748C00AF08FA /* AppDelegate.h */,
 				020B94051DAE748C00AF08FA /* AppDelegate.m */,
-				020B94071DAE748C00AF08FA /* AVAudioRecorderVC.h */,
-				020B94081DAE748C00AF08FA /* AVAudioRecorderVC.m */,
-				025A3A3B1DB7768900689746 /* AVPlayerMusicVC.h */,
-				025A3A3C1DB7768900689746 /* AVPlayerMusicVC.m */,
-				025260271DBB6BD500803E51 /* AVPlayerVideoVC.h */,
-				025260281DBB6BD500803E51 /* AVPlayerVideoVC.m */,
-				0252602A1DBB7CC000803E51 /* AVPlayerVideoNetworkVC.h */,
-				0252602B1DBB7CC000803E51 /* AVPlayerVideoNetworkVC.m */,
+				F5D5A0311FC65A0E005DF058 /* ViewController.h */,
+				F5D5A0321FC65A0E005DF058 /* ViewController.m */,
+				F5E6FEEC1FC6762D0097B7CB /* Recorder */,
+				F5E6FEEE1FC676430097B7CB /* Music */,
+				F5E6FEEF1FC6764D0097B7CB /* Video */,
 				02FE132F1DEB1E8C00BE90D6 /* yxqc.mp3 */,
+				F5E6FEF01FC6846D0097B7CB /* apple.mp4 */,
 				020B940A1DAE748C00AF08FA /* Main.storyboard */,
 				020B940D1DAE748C00AF08FA /* Assets.xcassets */,
 				020B940F1DAE748C00AF08FA /* LaunchScreen.storyboard */,
@@ -95,6 +98,35 @@
 				020B94021DAE748C00AF08FA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5E6FEEC1FC6762D0097B7CB /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				020B94071DAE748C00AF08FA /* AVAudioRecorderVC.h */,
+				020B94081DAE748C00AF08FA /* AVAudioRecorderVC.m */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		F5E6FEEE1FC676430097B7CB /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				025A3A3B1DB7768900689746 /* AVPlayerMusicVC.h */,
+				025A3A3C1DB7768900689746 /* AVPlayerMusicVC.m */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		F5E6FEEF1FC6764D0097B7CB /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				025260271DBB6BD500803E51 /* AVPlayerVideoVC.h */,
+				025260281DBB6BD500803E51 /* AVPlayerVideoVC.m */,
+				0252602A1DBB7CC000803E51 /* AVPlayerVideoNetworkVC.h */,
+				0252602B1DBB7CC000803E51 /* AVPlayerVideoNetworkVC.m */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +160,8 @@
 				TargetAttributes = {
 					020B93FD1DAE748C00AF08FA = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 9EU2MJ7WQ8;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -157,6 +190,7 @@
 			files = (
 				020B94111DAE748C00AF08FA /* LaunchScreen.storyboard in Resources */,
 				020B940E1DAE748C00AF08FA /* Assets.xcassets in Resources */,
+				F5E6FEF11FC6846D0097B7CB /* apple.mp4 in Resources */,
 				020B940C1DAE748C00AF08FA /* Main.storyboard in Resources */,
 				02FE13301DEB1E8C00BE90D6 /* yxqc.mp3 in Resources */,
 			);
@@ -169,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D5A0331FC65A0E005DF058 /* ViewController.m in Sources */,
 				020B94091DAE748C00AF08FA /* AVAudioRecorderVC.m in Sources */,
 				020B94061DAE748C00AF08FA /* AppDelegate.m in Sources */,
 				025260291DBB6BD500803E51 /* AVPlayerVideoVC.m in Sources */,
@@ -297,12 +332,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9EU2MJ7WQ8;
 				INFOPLIST_FILE = Voice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onefboy.Voice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefboy.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -311,12 +347,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9EU2MJ7WQ8;
 				INFOPLIST_FILE = Voice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onefboy.Voice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefboy.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

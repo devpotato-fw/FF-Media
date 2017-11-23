@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-// AVAudioRecorderVC录音
+// AVAudioRecorder录音
 @interface AVAudioRecorderVC : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView ;

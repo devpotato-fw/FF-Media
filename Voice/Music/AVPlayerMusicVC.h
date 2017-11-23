@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-// AVPlayer播放本地、网络-音频
+// AVPlayer播放 本地/网络 音频
 @interface AVPlayerMusicVC : UIViewController
 
 - (IBAction)playLocalMusic:(id)sender;
