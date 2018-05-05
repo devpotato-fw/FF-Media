@@ -7,7 +7,6 @@
 //
 
 #import "MediaPlayerVideoVC.h"
-#import <MediaPlayer/MediaPlayer.h>
 
 @interface MediaPlayerVideoVC ()
 

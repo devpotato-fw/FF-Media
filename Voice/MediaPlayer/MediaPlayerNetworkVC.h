@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 // MediaPlayer播放网络视频
 @interface MediaPlayerNetworkVC : UIViewController

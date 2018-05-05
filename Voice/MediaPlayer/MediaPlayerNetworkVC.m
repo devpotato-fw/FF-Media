@@ -7,7 +7,6 @@
 //
 
 #import "MediaPlayerNetworkVC.h"
-#import <MediaPlayer/MediaPlayer.h>
 
 @interface MediaPlayerNetworkVC ()
 
@@ -30,13 +29,16 @@
 - (MPMoviePlayerViewController *)playerViewController
 {
   if (_playerViewController == nil) {
+    // 1.获取视频的URL
     NSURL *url = [NSURL URLWithString:@"http://images.apple.com/media/cn/apple-events/2016/5102cb6c_73fd_4209_960a_6201fdb29e6e/keynote/apple-event-keynote-tft-cn-20160908_1536x640h.mp4"];
+    // 2.创建控制器
     _playerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
   }
   return _playerViewController;
 }
 
 - (IBAction)playVideo {
+  // 3.播放视频
   [self presentMoviePlayerViewControllerAnimated:self.playerViewController];
 }
 
