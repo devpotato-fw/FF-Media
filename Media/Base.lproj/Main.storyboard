@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qRa-0E-Jnh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qRa-0E-Jnh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,36 +23,44 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rid-JE-aYe">
                                 <rect key="frame" x="30" y="139" width="315" height="30"/>
-                                <state key="normal" title="AVAudioRecorder录音"/>
+                                <state key="normal" title="MediaPlayer播放音频"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="zVQ-e5-Gp4"/>
+                                    <segue destination="2xl-8h-cDk" kind="push" id="n0D-v9-mvO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFK-tC-c86">
                                 <rect key="frame" x="30" y="184" width="315" height="30"/>
-                                <state key="normal" title="AVPlayer播放音频"/>
+                                <state key="normal" title="MediaPlayer播放视频"/>
                                 <connections>
-                                    <segue destination="CkL-hX-aCH" kind="push" id="0WA-Nx-in0"/>
+                                    <segue destination="vhh-B2-3Xu" kind="push" id="34K-gt-cs1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-A7-3Ee">
                                 <rect key="frame" x="30" y="229" width="315" height="30"/>
-                                <state key="normal" title="AVPlayer播放视频"/>
+                                <state key="normal" title="AVPlayer播放音频"/>
                                 <connections>
-                                    <segue destination="B3Q-Gh-W63" kind="push" id="261-3t-HI4"/>
+                                    <segue destination="CkL-hX-aCH" kind="push" id="M5l-7u-ffX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zj-rx-aif">
                                 <rect key="frame" x="30" y="94" width="315" height="30"/>
-                                <state key="normal" title="MediaPlayer播放视频"/>
+                                <state key="normal" title="AVAudioRecorder录音"/>
                                 <connections>
-                                    <segue destination="vhh-B2-3Xu" kind="push" id="9ZM-hg-uBo"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="mey-L0-Ylu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdj-Zj-nDT">
+                                <rect key="frame" x="30" y="274" width="315" height="30"/>
+                                <state key="normal" title="AVPlayer播放视频"/>
+                                <connections>
+                                    <segue destination="B3Q-Gh-W63" kind="push" id="mZv-ae-nNb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AbS-A7-3Ee" firstAttribute="top" secondItem="kFK-tC-c86" secondAttribute="bottom" constant="15" id="262-cz-YOc"/>
+                            <constraint firstItem="kdj-Zj-nDT" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="4L6-a4-CgM"/>
                             <constraint firstItem="0Zj-rx-aif" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="7zb-hd-DIS"/>
                             <constraint firstAttribute="trailing" secondItem="kFK-tC-c86" secondAttribute="trailing" constant="30" id="BE4-sf-coE"/>
                             <constraint firstItem="kFK-tC-c86" firstAttribute="top" secondItem="rid-JE-aYe" secondAttribute="bottom" constant="15" id="NP1-WX-F4Z"/>
@@ -62,6 +70,8 @@
                             <constraint firstAttribute="trailing" secondItem="0Zj-rx-aif" secondAttribute="trailing" constant="30" id="alV-TV-xpi"/>
                             <constraint firstAttribute="trailing" secondItem="rid-JE-aYe" secondAttribute="trailing" constant="30" id="gwb-0I-eXN"/>
                             <constraint firstItem="kFK-tC-c86" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="jGU-ZL-obr"/>
+                            <constraint firstItem="kdj-Zj-nDT" firstAttribute="top" secondItem="AbS-A7-3Ee" secondAttribute="bottom" constant="15" id="mky-dJ-rec"/>
+                            <constraint firstAttribute="trailing" secondItem="kdj-Zj-nDT" secondAttribute="trailing" constant="30" id="qMY-4U-r0w"/>
                             <constraint firstItem="0Zj-rx-aif" firstAttribute="top" secondItem="dmM-HN-eOg" secondAttribute="bottom" constant="30" id="sgh-J4-RjC"/>
                             <constraint firstItem="AbS-A7-3Ee" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="uWf-6Z-MwV"/>
                         </constraints>
@@ -112,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQC-JO-069" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="57"/>
+            <point key="canvasLocation" x="1244" y="893"/>
         </scene>
         <!--播放本地视频-->
         <scene sceneID="9ub-wf-qXB">
@@ -172,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5e-mf-fcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="725"/>
+            <point key="canvasLocation" x="2225" y="1658"/>
         </scene>
         <!--AVPlayer-->
         <scene sceneID="Bqd-Nf-Ouw">
@@ -211,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfP-p0-xaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="773"/>
+            <point key="canvasLocation" x="1244" y="1657"/>
         </scene>
         <!--本地视频-->
         <scene sceneID="aB7-KL-Dz6">
@@ -240,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzv-2G-bkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2199" y="1487"/>
+            <point key="canvasLocation" x="3009" y="111"/>
         </scene>
         <!--网络视频-->
         <scene sceneID="8Oi-es-3Qs">
@@ -269,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPX-mt-h33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3052" y="1530.5847076461771"/>
+            <point key="canvasLocation" x="3791" y="103"/>
         </scene>
         <!--播放网络视频-->
         <scene sceneID="9cn-vs-RoD">
@@ -364,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C26-qS-XGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3052" y="772"/>
+            <point key="canvasLocation" x="3102" y="1658"/>
         </scene>
         <!--AVAudioRecorder-->
         <scene sceneID="tne-QT-ifu">
@@ -409,7 +419,7 @@
                                 <color key="color" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="录音中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYK-Pd-v9Z">
-                                <rect key="frame" x="143" y="170" width="90" height="21"/>
+                                <rect key="frame" x="142.5" y="170" width="90" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="4lG-xJ-t8K"/>
                                     <constraint firstAttribute="height" constant="21" id="YKz-g6-bZh"/>
@@ -519,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="-656.22188905547227"/>
+            <point key="canvasLocation" x="1244" y="-671"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JV7-uY-OHc">
@@ -538,6 +548,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBX-D9-nTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1122" y="771"/>
+        </scene>
+        <!--Media Player MusicVC-->
+        <scene sceneID="Okk-Vl-xzN">
+            <objects>
+                <viewController id="2xl-8h-cDk" customClass="MediaPlayerMusicVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="04n-bP-C3f"/>
+                        <viewControllerLayoutGuide type="bottom" id="gqN-vo-s31"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tRn-3d-g6f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zy-Cc-Qdp">
+                                <rect key="frame" x="38" y="97" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放本地音频"/>
+                                <connections>
+                                    <action selector="playLocalMusic:" destination="CkL-hX-aCH" eventType="touchUpInside" id="JU6-L1-w30"/>
+                                    <action selector="playLocalMusic:" destination="2xl-8h-cDk" eventType="touchUpInside" id="lgA-cI-xwa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-NA-BFG">
+                                <rect key="frame" x="38" y="135" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放网络音频"/>
+                                <connections>
+                                    <action selector="playNetworkMusic:" destination="2xl-8h-cDk" eventType="touchUpInside" id="GCd-pj-0JY"/>
+                                    <action selector="playNetworkMusic:" destination="CkL-hX-aCH" eventType="touchUpInside" id="KPr-cp-RMl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pxV-eG-fIX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nG1-5G-Abw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="117"/>
         </scene>
         <!--MediaPlayer-->
         <scene sceneID="Ogh-hX-ssa">
@@ -576,7 +627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vnl-iz-aTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="1531"/>
+            <point key="canvasLocation" x="2225" y="118"/>
         </scene>
     </scenes>
 </document>
