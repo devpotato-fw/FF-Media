@@ -29,14 +29,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFK-tC-c86">
-                                <rect key="frame" x="30" y="184" width="315" height="30"/>
+                                <rect key="frame" x="30" y="174" width="315" height="30"/>
                                 <state key="normal" title="MediaPlayer播放视频"/>
                                 <connections>
                                     <segue destination="vhh-B2-3Xu" kind="push" id="34K-gt-cs1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-A7-3Ee">
-                                <rect key="frame" x="30" y="229" width="315" height="30"/>
+                                <rect key="frame" x="30" y="219" width="315" height="30"/>
                                 <state key="normal" title="AVPlayer播放音频"/>
                                 <connections>
                                     <segue destination="CkL-hX-aCH" kind="push" id="M5l-7u-ffX"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdj-Zj-nDT">
-                                <rect key="frame" x="30" y="274" width="315" height="30"/>
+                                <rect key="frame" x="30" y="254" width="315" height="30"/>
                                 <state key="normal" title="AVPlayer播放视频"/>
                                 <connections>
                                     <segue destination="B3Q-Gh-W63" kind="push" id="mZv-ae-nNb"/>
@@ -63,14 +63,14 @@
                             <constraint firstItem="kdj-Zj-nDT" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="4L6-a4-CgM"/>
                             <constraint firstItem="0Zj-rx-aif" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="7zb-hd-DIS"/>
                             <constraint firstAttribute="trailing" secondItem="kFK-tC-c86" secondAttribute="trailing" constant="30" id="BE4-sf-coE"/>
-                            <constraint firstItem="kFK-tC-c86" firstAttribute="top" secondItem="rid-JE-aYe" secondAttribute="bottom" constant="15" id="NP1-WX-F4Z"/>
+                            <constraint firstItem="kFK-tC-c86" firstAttribute="top" secondItem="rid-JE-aYe" secondAttribute="bottom" constant="5" id="NP1-WX-F4Z"/>
                             <constraint firstItem="rid-JE-aYe" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="Q2Q-fB-q4O"/>
                             <constraint firstItem="rid-JE-aYe" firstAttribute="top" secondItem="0Zj-rx-aif" secondAttribute="bottom" constant="15" id="SIo-uK-r8M"/>
                             <constraint firstAttribute="trailing" secondItem="AbS-A7-3Ee" secondAttribute="trailing" constant="30" id="W2C-Nh-Jz9"/>
                             <constraint firstAttribute="trailing" secondItem="0Zj-rx-aif" secondAttribute="trailing" constant="30" id="alV-TV-xpi"/>
                             <constraint firstAttribute="trailing" secondItem="rid-JE-aYe" secondAttribute="trailing" constant="30" id="gwb-0I-eXN"/>
                             <constraint firstItem="kFK-tC-c86" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="jGU-ZL-obr"/>
-                            <constraint firstItem="kdj-Zj-nDT" firstAttribute="top" secondItem="AbS-A7-3Ee" secondAttribute="bottom" constant="15" id="mky-dJ-rec"/>
+                            <constraint firstItem="kdj-Zj-nDT" firstAttribute="top" secondItem="AbS-A7-3Ee" secondAttribute="bottom" constant="5" id="mky-dJ-rec"/>
                             <constraint firstAttribute="trailing" secondItem="kdj-Zj-nDT" secondAttribute="trailing" constant="30" id="qMY-4U-r0w"/>
                             <constraint firstItem="0Zj-rx-aif" firstAttribute="top" secondItem="dmM-HN-eOg" secondAttribute="bottom" constant="30" id="sgh-J4-RjC"/>
                             <constraint firstItem="AbS-A7-3Ee" firstAttribute="leading" secondItem="G00-RI-kNA" secondAttribute="leading" constant="30" id="uWf-6Z-MwV"/>

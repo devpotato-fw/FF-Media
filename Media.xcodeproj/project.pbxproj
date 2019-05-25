@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60A5B94229938DF000AE6B0 /* apple.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B60A5B93229938DF000AE6B0 /* apple.mp4 */; };
 		B6C550C92297C67A00A5A21B /* yxqc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6C550AF2297C67A00A5A21B /* yxqc.mp3 */; };
 		B6C550CB2297C67A00A5A21B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C550B12297C67A00A5A21B /* Assets.xcassets */; };
 		B6C550CC2297C67A00A5A21B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C550B22297C67A00A5A21B /* ViewController.m */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		020B93FE1DAE748C00AF08FA /* Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Media.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60A5B93229938DF000AE6B0 /* apple.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple.mp4; sourceTree = "<group>"; };
 		B6C550AE2297C67A00A5A21B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6C550AF2297C67A00A5A21B /* yxqc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yxqc.mp3; sourceTree = "<group>"; };
 		B6C550B12297C67A00A5A21B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				B6C550C62297C67A00A5A21B /* ViewController.h */,
 				B6C550B22297C67A00A5A21B /* ViewController.m */,
 				B6C550C12297C67A00A5A21B /* Main.storyboard */,
+				B60A5B93229938DF000AE6B0 /* apple.mp4 */,
 				B6C550AF2297C67A00A5A21B /* yxqc.mp3 */,
 				B6C550B12297C67A00A5A21B /* Assets.xcassets */,
 				B6C550BF2297C67A00A5A21B /* LaunchScreen.storyboard */,
@@ -226,6 +229,7 @@
 			files = (
 				B6C550D12297C67A00A5A21B /* LaunchScreen.storyboard in Resources */,
 				B6C550D22297C67A00A5A21B /* Main.storyboard in Resources */,
+				B60A5B94229938DF000AE6B0 /* apple.mp4 in Resources */,
 				B6C550CB2297C67A00A5A21B /* Assets.xcassets in Resources */,
 				B6C550C92297C67A00A5A21B /* yxqc.mp3 in Resources */,
 			);

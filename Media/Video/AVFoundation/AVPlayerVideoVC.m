@@ -64,6 +64,7 @@
   NSString *urlStr= [[NSBundle mainBundle] pathForResource:@"apple.mp4" ofType:nil];
   if (urlStr == nil) {
     NSLog(@"--- 请设置本地视频路径 ---");
+    NSCAssert(NO, @"请设置本地视频路径");
   }
   NSURL *url = [NSURL fileURLWithPath:urlStr];
   AVPlayerItem *playerItem=[AVPlayerItem playerItemWithURL:url];
