@@ -7,9 +7,11 @@
 //
 
 #import "MediaPlayerMusicVC.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface MediaPlayerMusicVC ()
 
+@property (strong, nonatomic) MPMoviePlayerController *playerController;
 @property (strong, nonatomic) MPMoviePlayerViewController *playerViewController;//播放器对象
 
 @end
@@ -25,8 +27,13 @@
   
   NSURL *url = [[NSBundle mainBundle] URLForResource:@"yxqc.mp3" withExtension:nil];
   
-  self.playerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
+  //  MPMoviePlayerController 需要添加到 View 上
+//  self.playerController = [[MPMoviePlayerController alloc] initWithContentURL:url];
+//  self.playerController.view.frame = self.view.bounds;
+//  [self.view addSubview:self.playerController.view];
+//  [self.playerController play];
   
+  self.playerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
   [self presentMoviePlayerViewControllerAnimated:self.playerViewController];
 }
 
