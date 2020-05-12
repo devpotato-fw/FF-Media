@@ -29,6 +29,6 @@ Audio Unit 框架是一个底层的 API；所有 iOS 中的音频技术都构建
 Audio Unit 的 API 可以在 iOS 中进行跨应用音频。音频流 (和 MIDI 命令) 可以在应用程序之间发送。比如说：一个应用程序可以提供音频的效果器或者滤波器。另一个应用程序可以将它的音频发送到第一个应用程序中，并使用其中的音频效果器处理音频。被过滤的音频又会被实时地发送回原来的应用程序中。 CoreAudioKit 提供了一个简单的跨应用程序的音频界面。
 
 
-四：Audio Unit 框架 <AudioUnit/AudioUnit.h>
+五：Audio Unit 框架 <AudioUnit/AudioUnit.h>
 
 用于H264视频编解码
